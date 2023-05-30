@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'BerkshireSwash';
+    src: url('BerkshireSwash-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Amarante';
+    src: url('Amarante-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Merienda';
+    src: url('Merienda-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Amaranth';
+    src: url('Amaranth-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Condensed';
+    src: url('RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf');
+}
