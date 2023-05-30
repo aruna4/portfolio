@@ -1,1 +1,597 @@
+@import url('fonts.css');
 
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 37.5em) {
+    html {
+        font-size: 48%;
+    }
+}
+
+@media only screen and (min-width: 37.5625em) {
+    html {
+        font-size: 52%;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    html {
+        font-size: 57%;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    line-height: 1.5;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: Roboto-Condensed;
+}
+
+/* Nav Bar */
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 100px #F2D9FF;
+}
+
+.top-nav {
+    padding: 1.5rem 3rem;
+}
+
+.logo-sub {
+    font-family: BerkshireSwash, cursive;
+    font-size: 3.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-family: Amarante;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-icon {
+    width: 20%;
+    text-align: right;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+/* Screen Sizes below 600px */
+@media only screen and (max-width: 37.5em) {
+    .top-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-list {
+        display: none;
+    }
+    
+    .hero-content h1 {
+        padding-top: 10rem;
+    }
+    
+    .navlist-style {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: right;
+        font-size: 2rem;
+    }
+    
+    .navlist-style li {
+        border-bottom: solid 1px #eee;
+        padding: 1.2rem 3rem 1.2rem 0rem;
+        
+    }
+    
+    .navlist-style li:first-child {
+        border-top: solid 1px #eee;
+    }
+    
+}
+
+/* Screen Sizes above 601px */
+@media only screen and (min-width: 37.5625em) {
+    .nav-icon {
+        display: none;
+    }
+    
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .logo-sub {
+        font-size: 3.8rem;
+    }
+    
+    .nav-list {
+        width: 80vw;
+        padding: 1rem 0rem;
+        font-size: 2rem;
+    }
+    
+    .hero-content h1 {
+        padding-top: 12rem;
+    }
+}
+
+/* Screen Sizes above 768px */
+@media only screen and (min-width: 48em) {
+    .navbar {
+        flex-direction: row;
+    }
+        
+    .nav-list {
+        width: 38vw;
+        padding: 0rem 5rem;
+    }
+}
+
+/* Welcome Section */
+
+.welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(242,217,255,0), rgba(242,217,255,0.8)), url(https://aruna4.github.io/portfolio/welcome-section-bg.png);
+    /* background by SVGBackgrounds.com */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3.8rem;
+    font-family: Merienda;
+    text-align: center;
+}
+
+.hero-content p {
+    width: 65vw;
+    font-size: 1.8rem;
+    font-family: Amaranth;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.hero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D00A6;
+    border-radius: 5px;
+    margin-top: 4rem;
+}
+
+.hero-btn a {
+    text-decoration: none;
+    color: #F2D9FF;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.3rem 5rem;
+}
+
+.hero-btn:hover {
+    transform: translateY(5px);
+}
+
+/* About Section */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: #FCF5FF;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+}
+
+.about-heading {
+    text-align: center;
+}
+
+.about-heading h2 {
+    font-size: 3.5rem;
+    font-family: Amarante;
+    padding-bottom: 0.5rem;
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #6D00A6;
+}
+
+.left {
+    margin-right: 0.5rem;
+}
+
+.right {
+    margin-left: 0.5rem;
+}
+
+hr {
+    border: 3px solid #6D00A6;
+    border-radius: 10px;
+    width: 5vw;
+}
+
+.about-heading p {
+    font-size: 1.9rem;
+    padding-top: 2rem;
+}
+
+.about-sub {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+}
+
+.about-sub h3 {
+    font-size: 2.5rem;
+    font-family: Amaranth;
+    padding-bottom: 2rem;
+}
+
+.about-me p {
+    font-size: 1.9rem;
+    padding-bottom: 0.8rem;
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.about-me a {
+    text-decoration: none;
+    color: #6D00A6;
+    font-size: 2.1rem;
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D00A6;
+    border-radius: 5px;
+    margin-top: 2rem;
+    width: 20rem;
+}
+
+.contact-btn a {
+    text-decoration: none;
+    color: #F2D9FF;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.3rem 5rem;
+}
+
+.contact-btn:hover {
+    transform: translateY(5px);
+}
+
+.skills {
+    padding-top: 5rem;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color: #F2D9FF;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+}
+
+/* Screen Sizes below 600px */
+@media only screen and (max-width: 37.5em) {
+    .about {
+        height: auto;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+    
+    .about-container {
+        width: 92%;
+    }
+    
+    .about-heading {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .about-sub {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .skills-list li {
+        margin-right: 2rem;
+    }
+}
+
+/* Screen Sizes above 601px */
+@media only screen and (min-width: 37.5625em) {
+    .about {
+        height: auto;
+        padding-top: 17rem;
+        padding-bottom: 5rem;
+    }
+    
+    .about-container {
+        width: 90%;
+    }
+}
+
+/* Screen Sizes above 768px */
+@media only screen and (min-width: 48em) {
+    .about {
+        padding-top: 12rem;
+    }
+}
+
+/* Screen Sizes above 1200px */
+@media only screen and (min-width: 75em) {
+    .about {
+        padding-top: 15rem;
+        height: 100vh;
+        padding-bottom: 0rem;
+    }
+    
+    .about-container {
+        width: 85%;
+    }
+    
+    .about-sub {
+        justify-content: space-between;
+    }
+    
+    .about-me {
+        width: 47%;
+    }
+    
+    .skills {
+        width: 47%;
+        padding-top: 0rem;
+    }
+}
+
+/* My Projects */
+
+.projects {
+    width: 100%;
+    height: auto;
+    padding-top: 15rem;
+}
+
+.projects-container {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 7rem;
+}
+
+.projects-heading {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.projects-heading h2 {
+    font-size: 3.5rem;
+    font-family: Amarante;
+    padding-bottom: 0.5rem;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 5rem;
+    padding-bottom: 5rem;
+}
+
+.project {
+    background-color: #F2D9FF;
+}
+
+.project img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project p {
+    text-align: center;
+    font-weight: bold;
+    padding: 1.3rem 0rem 1.5rem 0rem;
+    font-size: 2.1rem;
+    background-color: #F2D9FF;
+    font-family: Amaranth;
+    letter-spacing: 1px;
+}
+
+.project p:hover {
+    transform: translateY(5px);
+}
+
+.project a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.show-all-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D00A6;
+    border-radius: 5px;
+    width: 23rem;
+    margin: auto;
+}
+
+.show-all-btn a {
+    text-decoration: none;
+    color: #F2D9FF;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.3rem 5rem;
+}
+
+.show-all-btn:hover {
+    transform: translateY(5px);
+}
+
+/* Screen Sizes below 600px */
+@media only screen and (max-width: 37.5em) {
+    .projects-container {
+        width: 85%;
+    }
+    
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Section */
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Amaranth;
+    background: linear-gradient(rgba(242,217,255,0), rgba(242,217,255,0.8)), url(https://aruna4.github.io/portfolio/welcome-section-bg.png);
+    /* background by SVGBackgrounds.com */
+}
+
+.contact-heading {
+    padding-bottom: 4rem;
+}
+
+.contact-heading h2 {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.contact-heading p {
+    font-size: 2.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.contact-links {
+    width: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #000;
+    padding-left: 1rem;
+}
+
+.contact-links a:hover {
+    transform: translateY(8px);
+}
+
+.contact-links i {
+    color: #6D00A6;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    min-height: 10rem;
+    background-image: linear-gradient(#F2D9FF, #D991FE, #6D00A6);
+}
+
+.footer-container {
+    width: 85%;
+    margin: auto;
+}
+
+.footer-container p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5rem;
+}
