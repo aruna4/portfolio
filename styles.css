@@ -175,6 +175,7 @@ body {
     flex-wrap: wrap;
     background: linear-gradient(rgba(242,217,255,0), rgba(242,217,255,0.8)), url(https://aruna4.github.io/portfolio/welcome-section-bg.png);
     /* background by SVGBackgrounds.com */
+    background-size: cover;
 }
 
 .hero-content {
@@ -206,6 +207,7 @@ body {
     background-color: #6D00A6;
     border-radius: 5px;
     margin-top: 4rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hero-btn a {
@@ -314,6 +316,7 @@ hr {
     border-radius: 5px;
     margin-top: 2rem;
     width: 20rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact-btn a {
@@ -494,6 +497,7 @@ hr {
     border-radius: 5px;
     width: 23rem;
     margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .show-all-btn a {
